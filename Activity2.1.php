@@ -1,7 +1,7 @@
 <?php
 include "conn.php";
 
-// 1. Table 1 - All records from customers who are living in one specific city.
+
 echo "All records from customers who are living in one specific city.";
 $sql1 = "SELECT id, company, CONCAT(first_name, ' ', last_name) AS full_name, job_title, business_phone, fax_number, address, city, state_province, zip_postal_code, country_region FROM customers WHERE city = 'boston';";
 $result = $conn->query($sql1);
